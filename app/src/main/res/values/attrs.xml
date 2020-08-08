@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SehatqTextView">
+        <attr name="SehatqTextView" format="reference"/>
+        <attr name="tntType" format="enum" >
+            <enum name="headline" value="0" />
+            <enum name="description" value="1" />
+            <enum name="title" value="2"/>
+            <enum name="button" value="3"/>
+            <enum name="formalHeadline" value="4"/>
+            <enum name="formalReguler" value="5"/>
+            <enum name="formalDescription" value="6"/>
+        </attr>
+        <attr name="tntSize" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="SehatqEditTextView">
+        <attr name="SehatqEditTextView" format="reference"/>
+        <attr name="editType" format="enum" >
+            <enum name="primary" value="0" />
+            <enum name="secondary" value="1" />
+        </attr>
+        <attr name="editSize" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="SehatqButtonView">
+        <attr name="SehatqButtonView" format="reference"/>
+        <attr name="leftIcon" format="integer"/>
+        <attr name="rightIcon" format="integer"/>
+        <attr name="buttonTextSize" format="integer"/>
+        <attr name="textAction" format="string"/>
+        <attr name="buttonType" format="enum">
+            <enum name="primary" value="0"/>
+            <enum name="secondary" value="1"/>
+        </attr>
+
+    </declare-styleable>
+</resources>

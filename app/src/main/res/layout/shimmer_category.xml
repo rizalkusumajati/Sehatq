@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="4"
+    android:orientation="horizontal">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/default_margin"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvIconMenu1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="70dp"
+            android:minHeight="70dp"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="@color/colorGrey"
+            >
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/ivIconMenu1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGrey"
+                android:padding="10dp"
+                ></ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <com.riztech.sehatq.widget.SehatqTextView
+            android:id="@+id/tvCategory1"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@id/cvIconMenu1"
+            app:layout_constraintRight_toRightOf="@id/cvIconMenu1"
+            app:layout_constraintTop_toBottomOf="@id/cvIconMenu1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:background="@color/colorGrey"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:tntSize="16"
+            app:tntType="formalHeadline">
+
+        </com.riztech.sehatq.widget.SehatqTextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/default_margin"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvIconMenu2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="70dp"
+            android:minHeight="70dp"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="@color/colorGrey"
+            >
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/ivIconMenu2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGrey"
+                android:padding="10dp"
+                ></ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <com.riztech.sehatq.widget.SehatqTextView
+            android:id="@+id/tvCategory2"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@id/cvIconMenu2"
+            app:layout_constraintRight_toRightOf="@id/cvIconMenu2"
+            app:layout_constraintTop_toBottomOf="@id/cvIconMenu2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:singleLine="true"
+            android:background="@color/colorGrey"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:tntSize="16"
+            app:tntType="formalHeadline">
+
+        </com.riztech.sehatq.widget.SehatqTextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/default_margin"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvIconMenu3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="70dp"
+            android:minHeight="70dp"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="@color/colorGrey"
+            >
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/ivIconMenu3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGrey"
+                android:padding="10dp"
+                ></ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <com.riztech.sehatq.widget.SehatqTextView
+            android:id="@+id/tvCategory3"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@id/cvIconMenu3"
+            app:layout_constraintRight_toRightOf="@id/cvIconMenu3"
+            app:layout_constraintTop_toBottomOf="@id/cvIconMenu3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:singleLine="true"
+            android:background="@color/colorGrey"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:tntSize="16"
+            app:tntType="formalHeadline">
+
+        </com.riztech.sehatq.widget.SehatqTextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/default_margin"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvIconMenu4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="70dp"
+            android:minHeight="70dp"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="@color/colorGrey"
+            >
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/ivIconMenu4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGrey"
+                android:padding="10dp"
+                ></ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <com.riztech.sehatq.widget.SehatqTextView
+            android:id="@+id/tvCategory4"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@id/cvIconMenu4"
+            app:layout_constraintRight_toRightOf="@id/cvIconMenu4"
+            app:layout_constraintTop_toBottomOf="@id/cvIconMenu4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:background="@color/colorGrey"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:tntSize="16"
+            app:tntType="formalHeadline">
+
+        </com.riztech.sehatq.widget.SehatqTextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

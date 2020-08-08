@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/default_margin"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvIconMenu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="70dp"
+        android:minHeight="70dp"
+        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="@color/orangeBackground"
+        >
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/ivIconMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:padding="10dp"
+            ></ImageView>
+    </androidx.cardview.widget.CardView>
+
+    <com.riztech.sehatq.widget.SehatqTextView
+        android:id="@+id/tvCategory"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="@id/cvIconMenu"
+        app:layout_constraintRight_toRightOf="@id/cvIconMenu"
+        app:layout_constraintTop_toBottomOf="@id/cvIconMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="veternity"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:tntSize="16"
+        app:tntType="formalHeadline">
+
+    </com.riztech.sehatq.widget.SehatqTextView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1067564889487",
+    "firebase_url": "https://sehatqtest.firebaseio.com",
+    "project_id": "sehatqtest",
+    "storage_bucket": "sehatqtest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1067564889487:android:72f4e88f43867cdf8507fa",
+        "android_client_info": {
+          "package_name": "com.riztech.sehatq"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1067564889487-45dmk5ar34cotllqhs2ekie0kf7mblm7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.riztech.sehatq",
+            "certificate_hash": "adef037c01961908c394725bc84080f5eb80594b"
+          }
+        },
+        {
+          "client_id": "1067564889487-5ll2me3qfii7p12qh5h9b3f8j0sj72hu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4ti0TturUBUwhn2_T4UupSg6uI7lQqng"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1067564889487-5ll2me3qfii7p12qh5h9b3f8j0sj72hu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

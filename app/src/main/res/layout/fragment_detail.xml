@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/icProduct"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="150dp"
+        android:src="@drawable/ic_product"
+        android:layout_marginVertical="@dimen/default_margin"
+        android:layout_height="150dp"/>
+
+    <ImageView
+        android:id="@+id/share"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
+        android:src="@drawable/ic_share_2"
+        app:tint="@color/white"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+    <ImageView
+        android:id="@+id/back"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:src="@drawable/ic_chevron_left"
+        app:tint="@color/white"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/icProduct"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/round_top"
+        android:layout_marginTop="@dimen/default_margin">
+
+        <com.riztech.sehatq.widget.SehatqTextView
+            android:id="@+id/titleDetail"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/love"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Really Cool Watch"/>
+
+        <ImageView
+            android:id="@+id/love"
+            app:layout_constraintTop_toTopOf="@id/titleDetail"
+            app:layout_constraintRight_toRightOf="parent"
+            android:src="@drawable/love_selector"
+            android:clickable="true"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="@dimen/short_margin"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+        <com.riztech.sehatq.widget.SehatqTextView
+            android:id="@+id/likesDetail"
+            app:layout_constraintTop_toBottomOf="@id/love"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="24dp"
+            android:layout_width="wrap_content"
+            app:tntType="formalReguler"
+            app:tntSize="10"
+            android:layout_height="wrap_content"/>
+
+        <com.riztech.sehatq.widget.SehatqTextView
+            android:id="@+id/priceDetail"
+            app:layout_constraintTop_toBottomOf="@id/titleDetail"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="24dp"
+            app:tntType="headline"
+            android:text="$400"
+            android:layout_height="wrap_content"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/shopping"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/round_top_left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+            <ImageView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:tint="@color/colorPrimary"
+                android:src="@drawable/ic_shopping_bag"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            app:layout_constraintTop_toBottomOf="@id/priceDetail"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/shopping"
+            android:layout_marginTop="@dimen/short_margin"
+            android:layout_marginBottom="@dimen/short_margin"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <com.riztech.sehatq.widget.SehatqTextView
+                android:id="@+id/descriptionDetail"
+                android:layout_marginHorizontal="24dp"
+                app:tntType="formalReguler"
+                app:tntSize="16"
+                android:text="This sets the stage for Casio’s newly updated G-Shock G-Lide watch collection (GBX100 family) whose beautiful new form includes both a new screen and a new operating system that has Bluetooth connectivity. It isn’t a full-on smartwatch, as it doesn’t need to be re-charged regularly, and it doesn’t have a lot of applications running on it, but it marries the best of what the G-Lide has to offer with modern connectivity and features that consumers expect.\nThe module 3482 quartz movement inside the watch is new; the only downside is that there is no solar power-generation in this model, though it does contain a standard CR2032 cell battery that is said to have a two-year average life. The watch has both Bluetooth connectivity and a built-in step counter (pedometer), so this watch can actually function as an activity tracker when used in conjunction with the G-Shock Move smartphone app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

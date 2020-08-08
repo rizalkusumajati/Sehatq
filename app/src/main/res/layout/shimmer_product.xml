@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="@dimen/short_margin"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_marginBottom="8dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:id="@+id/ivProductImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/colorGrey"
+                android:scaleType="centerCrop">
+            </ImageView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.riztech.sehatq.widget.SehatqTextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/love"
+            android:id="@+id/tvProductTitle"
+            android:layout_width="0dp"
+            android:background="@color/colorGrey"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            app:tntSize="20"
+            app:tntType="formalHeadline"
+            android:textStyle="bold">
+        </com.riztech.sehatq.widget.SehatqTextView>
+
+        <com.riztech.sehatq.widget.SehatqTextView
+            app:layout_constraintTop_toBottomOf="@id/tvProductTitle"
+            android:id="@+id/tvProductPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/short_margin"
+            android:textColor="@android:color/black"
+            app:tntSize="14"
+            app:tntType="headline"
+            android:background="@color/colorGrey"
+            android:textStyle="bold">
+        </com.riztech.sehatq.widget.SehatqTextView>
+
+        <ImageView
+            android:id="@+id/love"
+            app:layout_constraintTop_toTopOf="@id/tvProductTitle"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="@color/colorGrey"
+            android:clickable="true"
+            android:layout_marginRight="@dimen/short_margin"
+            android:layout_marginBottom="@dimen/short_margin"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+        <com.riztech.sehatq.widget.SehatqTextView
+            android:id="@+id/likes"
+            app:layout_constraintTop_toBottomOf="@id/love"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="@dimen/short_margin"
+            android:layout_width="wrap_content"
+            app:tntType="formalReguler"
+            android:background="@color/colorGrey"
+            app:tntSize="10"
+            android:layout_height="wrap_content"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

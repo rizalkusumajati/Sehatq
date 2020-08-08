@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/default_margin"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvIconItem"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:cardCornerRadius="12dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+        <ImageView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/ivProductImageItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorGrey"
+            android:scaleType="centerCrop">
+        </ImageView>
+    </androidx.cardview.widget.CardView>
+
+    <com.riztech.sehatq.widget.SehatqTextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/cvIconItem"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:id="@+id/tvProductTitleItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        app:tntSize="20"
+        app:tntType="formalHeadline"
+        android:textStyle="bold"
+        android:background="@color/colorGrey">
+    </com.riztech.sehatq.widget.SehatqTextView>
+
+    <com.riztech.sehatq.widget.SehatqTextView
+        app:layout_constraintTop_toBottomOf="@id/tvProductTitleItem"
+        android:id="@+id/tvProductPriceItem"
+        app:layout_constraintLeft_toLeftOf="@id/tvProductTitleItem"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/short_margin"
+        android:textColor="@android:color/black"
+        app:tntSize="14"
+        app:tntType="headline"
+        android:textStyle="bold"
+        android:background="@color/colorGrey">
+    </com.riztech.sehatq.widget.SehatqTextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
